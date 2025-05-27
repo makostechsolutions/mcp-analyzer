@@ -57,31 +57,31 @@ const MCPResults: React.FC<MCPResultsProps> = ({ result }) => {
       )}
       <Stack direction="column" gap={3} mt={4} align="stretch">
         <Box>
-          <Heading size="sm">Tools</Heading>
+          <Heading size="sm" color="white">Tools</Heading>
           <Code whiteSpace="pre" display="block" p={2} mt={1}>
             {JSON.stringify(result.tools, null, 2)}
           </Code>
         </Box>
         <Box>
-          <Heading size="sm">Prompts</Heading>
+          <Heading size="sm" color="white">Prompts</Heading>
           <Code whiteSpace="pre" display="block" p={2} mt={1}>
             {JSON.stringify(result.prompts, null, 2)}
           </Code>
         </Box>
         <Box>
-          <Heading size="sm">Resources</Heading>
+          <Heading size="sm" color="white">Resources</Heading>
           <Code whiteSpace="pre" display="block" p={2} mt={1}>
             {JSON.stringify(result.resources, null, 2)}
           </Code>
         </Box>
         <Box>
-          <Heading size="sm">Relationships</Heading>
+          <Heading size="sm" color="white">Relationships</Heading>
           <Code whiteSpace="pre" display="block" p={2} mt={1}>
             {JSON.stringify(relationshipsToDisplay, null, 2)}
           </Code>
         </Box>
         <Box>
-          <Heading size="sm" mb={2}>Graph Visualization</Heading>
+          <Heading size="sm" color="white" mb={2}>Graph Visualization</Heading>
           <MCPGraph
             tools={result.tools}
             prompts={result.prompts}

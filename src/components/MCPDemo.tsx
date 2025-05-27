@@ -54,7 +54,7 @@ const MCPDemo: React.FC = () => {
           <Heading as="h1" size="xl" mb={2} color="white">
             MCP Analyzer
           </Heading>
-          <Text fontSize="lg" color="white.400" >
+          <Text fontSize="lg" color="white" >
             Analyze and visualize MCP-annotated code
           </Text>
         </Box>
