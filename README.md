@@ -11,6 +11,13 @@ MCP Analyzer is a modern React application for analyzing code annotated with the
 - **Error Feedback:** Displays detailed errors for invalid MCP blocks.
 - **Modern UI:** Built with Chakra UI for a clean, responsive interface.
 
+## Documentation
+- [Architecture](./docs/ARCHITECTURE.md)
+- [Implementation Notes: Plan vs. Actual](./docs/IMPLEMENTATION.md)
+- [Reflection](./docs/REFLECTION.md)
+- [MCP Parser](./docs/mcpParser.md)
+- [Github Service](./docs/githubService.md)
+
 ## Getting Started
 
 ### Prerequisites
@@ -93,21 +100,23 @@ yarn test
 ```
 src/
   components/
-    analysis/         # UI for analysis and results
-    common/           # Shared UI components
-    repository/       # Repo input and integration
+    MCPDemo.tsx        # Main demo component
+    MCPGraph.tsx       # Graph visualization component
+    MCPResults.tsx     # Results display component
+    RepoOrPasteInput.tsx # Input component for repo or code paste
   services/
-    github/           # GitHub API integration
-    parser/           # MCP parsing and validation
+    analyzer/          # Analysis service - sudo code for future features
+    github/            # GitHub API integration - tests included
+    parser/            # MCP parsing and validation - tests included
   types/              # TypeScript types
-  utils/              # Utility functions
-  hooks/              # Custom React hooks
-```
+  assets/             # Static assets
+  App.tsx             # Main application component
+  main.tsx            # Application entry point
+  index.css           # Global styles
 
-## Documentation
-- [Architecture](./docs/ARCHITECTURE.md)
-- [Implementation Notes: Plan vs. Actual](./docs/IMPLEMENTATION.md)
-- [Reflection](./docs/REFLECTION.md)
+docs/                # Documentation
+public/              # Public assets
+```
 
 ## Contributing
 1. Fork the repo and create a feature branch.
