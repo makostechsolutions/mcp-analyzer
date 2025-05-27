@@ -26,7 +26,7 @@ MCP Analyzer is a modern React application for analyzing code annotated with the
 
 ### Installation
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:makostechsolutions/mcp-analyzer.git
 cd mcp-analyzer
 npm install
 # or
@@ -35,17 +35,13 @@ yarn install
 
 ### Running the App
 ```bash
-npm start
-# or
-yarn start
+npm run dev
 ```
-The app will be available at [http://localhost:3000](http://localhost:3000).
+The app will be available at [http://localhost:5173](http://localhost:5173).
 
 ### Running Tests
 ```bash
 npm test
-# or
-yarn test
 ```
 
 ## Usage
